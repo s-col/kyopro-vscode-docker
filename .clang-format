@@ -1,0 +1,12 @@
+BasedOnStyle: Google
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AlwaysBreakTemplateDeclarations: true
+BreakBeforeBraces: Custom
+BraceWrapping:
+    BeforeElse: true
+IndentWidth: 4
+AccessModifierOffset: -4
+ColumnLimit: 0
+MaxEmptyLinesToKeep: 4
+KeepEmptyLinesAtTheStartOfBlocks: true

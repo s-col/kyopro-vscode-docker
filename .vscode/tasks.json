@@ -1,0 +1,68 @@
+{
+    // tasks.json 形式の詳細についての資料は、
+    // https://go.microsoft.com/fwlink/?LinkId=733558 をご覧ください
+    "version": "2.0.0",
+    "tasks": [
+        {   // コンパイル (C++14) [デフォルト]
+            "type": "shell",
+            "label": "build kyopro",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-ggdb",
+                "-Wall",
+                "-std=gnu++14",
+                "-march=native",
+                "-mtune=native",
+                "main.cpp",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {   // コンパイル (C++14, 最適化あり)
+            "type": "shell",
+            "label": "build kyopro (optimized)",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-O2",
+                "-ggdb",
+                "-Wall",
+                "-std=gnu++14",
+                "-march=native",
+                "-mtune=native",
+                "main.cpp",
+            ],
+            "group": "none"
+        },
+        {   // コンパイル (C++17)
+            "type": "shell",
+            "label": "build kyopro C++17",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-ggdb",
+                "-Wall",
+                "-std=gnu++17",
+                "-march=native",
+                "-mtune=native",
+                "main.cpp",
+            ],
+            "group": "none"
+        },
+        {    // コンパイル (C++17, 最適化あり)
+            "type": "shell",
+            "label": "build kyopro C++17 (optimized)",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-O2",
+                "-ggdb",
+                "-Wall",
+                "-std=gnu++17",
+                "-march=native",
+                "-mtune=native",
+                "main.cpp",
+            ],
+            "group": "none"
+        },
+    ]
+}
